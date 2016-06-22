@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
     public void showBottomDialog(View view) {
         FragmentManager fm = getSupportFragmentManager();
         BottomDialogFragment editNameDialog = new BottomDialogFragment();
-        editNameDialog.show(fm, "fragment_edit_name");
+        editNameDialog.show(fm, "fragment_bottom_dialog");
     }
 }

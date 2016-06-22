@@ -42,6 +42,7 @@ public class BottomDialogFragment extends DialogFragment {
     @BindView(R.id.regards_tv_send) TextView mTvSend; // 发送按钮
     @BindView(R.id.regards_tv_coin_count) TextView mTvCoinCount;
 
+    private ArrayList<LinearLayout> mLayouts; // 框架
     private ArrayList<TextView> mTvTypes; // 文字类型
     private ArrayList<ImageView> mIvTypes; // 图像类型
     private int mType = 0; // 当前类型
@@ -74,36 +75,8 @@ public class BottomDialogFragment extends DialogFragment {
      * 初始化点击类型
      */
     private void initClickTypes() {
-        initTypes(); // 初始化类型
-        chooseRegardsType(mType); // 选择默认类型
-
-        mLlFirstContainer.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                mType = 0;
-                chooseRegardsType(mType);
-            }
-        });
-
-        mLlSecondContainer.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                mType = 1;
-                chooseRegardsType(mType);
-            }
-        });
-
-        mLlThirdContainer.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                mType = 2;
-                chooseRegardsType(mType);
-            }
-        });
-
-        mLlForthContainer.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                mType = 3;
-                chooseRegardsType(mType);
-            }
-        });
+        initViewArray(); // 初始化控件组
+        initLayout(); // 初始化布局
 
         mTvSend.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
@@ -134,6 +107,24 @@ public class BottomDialogFragment extends DialogFragment {
     }
 
     /**
+     * 初始化布局
+     */
+    private void initLayout() {
+        chooseRegardsType(mType); // 选择默认类型
+
+        for (int i = 0; i < mLayouts.size(); i++) {
+            final int tmp = i;
+            LinearLayout ll = mLayouts.get(i);
+            ll.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    mType = tmp;
+                    chooseRegardsType(mType);
+                }
+            });
+        }
+    }
+
+    /**
      * 消费金币
      *
      * @param count 金币数
@@ -153,9 +144,15 @@ public class BottomDialogFragment extends DialogFragment {
     /**
      * 初始化类型数组, 文字和图片
      */
-    private void initTypes() {
+    private void initViewArray() {
+        mLayouts = new ArrayList<>();
         mTvTypes = new ArrayList<>();
         mIvTypes = new ArrayList<>();
+
+        mLayouts.add(mLlFirstContainer);
+        mLayouts.add(mLlSecondContainer);
+        mLayouts.add(mLlThirdContainer);
+        mLayouts.add(mLlForthContainer);
 
         mTvTypes.add(mTv100Coins);
         mTvTypes.add(mTv2Yuan);
