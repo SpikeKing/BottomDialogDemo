@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="154dp"
+              android:background="@color/regard_container_bkg"
+              android:orientation="vertical"
+              tools:ignore="RtlHardcoded,HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/regards_ll_first_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/regards_type_image_size"
+                android:layout_height="@dimen/regards_type_image_size"
+                android:layout_marginTop="24dp"
+                android:background="@color/regard_image_bkg"
+                android:contentDescription="@null"
+                android:padding="6dp"
+                android:src="@drawable/regards_100_coins"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/regards_tv_100_coins"
+                    android:layout_width="@dimen/regards_type_image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="一字之师"
+                    android:textColor="@color/regard_text_bkg"
+                    android:textSize="@dimen/regards_text_size"/>
+
+                <ImageView
+                    android:id="@+id/regards_iv_100_coins"
+                    android:layout_width="@dimen/regards_type_choose_size"
+                    android:layout_height="@dimen/regards_type_choose_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/regards_tv_100_coins"
+                    android:contentDescription="@null"
+                    android:src="@drawable/regards_choose"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/regards_ll_second_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/regards_type_image_size"
+                android:layout_height="@dimen/regards_type_image_size"
+                android:layout_marginTop="24dp"
+                android:background="@color/regard_image_bkg"
+                android:contentDescription="@null"
+                android:padding="6dp"
+                android:src="@drawable/regards_2_yuan"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/regards_tv_2_yuan"
+                    android:layout_width="@dimen/regards_type_image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="妙语连珠"
+                    android:textColor="@color/regard_text_bkg"
+                    android:textSize="@dimen/regards_text_size"/>
+
+                <ImageView
+                    android:id="@+id/regards_iv_2_yuan"
+                    android:layout_width="@dimen/regards_type_choose_size"
+                    android:layout_height="@dimen/regards_type_choose_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/regards_tv_2_yuan"
+                    android:contentDescription="@null"
+                    android:src="@drawable/regards_choose"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/regards_ll_third_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/regards_type_image_size"
+                android:layout_height="@dimen/regards_type_image_size"
+                android:layout_marginTop="24dp"
+                android:background="@color/regard_image_bkg"
+                android:contentDescription="@null"
+                android:padding="6dp"
+                android:src="@drawable/regards_8_yuan"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/regards_tv_8_yuan"
+                    android:layout_width="@dimen/regards_type_image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="学识丰富"
+                    android:textColor="@color/regard_text_bkg"
+                    android:textSize="@dimen/regards_text_size"/>
+
+                <ImageView
+                    android:id="@+id/regards_iv_8_yuan"
+                    android:layout_width="@dimen/regards_type_choose_size"
+                    android:layout_height="@dimen/regards_type_choose_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/regards_tv_8_yuan"
+                    android:contentDescription="@null"
+                    android:src="@drawable/regards_choose"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/regards_ll_forth_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/regards_type_image_size"
+                android:layout_height="@dimen/regards_type_image_size"
+                android:layout_marginTop="24dp"
+                android:background="@color/regard_image_bkg"
+                android:contentDescription="@null"
+                android:padding="6dp"
+                android:src="@drawable/regards_12_yuan"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/regards_tv_12_yuan"
+                    android:layout_width="@dimen/regards_type_image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="博学多才"
+                    android:textColor="@color/regard_text_bkg"
+                    android:textSize="@dimen/regards_text_size"/>
+
+                <ImageView
+                    android:id="@+id/regards_iv_12_yuan"
+                    android:layout_width="@dimen/regards_type_choose_size"
+                    android:layout_height="@dimen/regards_type_choose_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/regards_tv_12_yuan"
+                    android:contentDescription="@null"
+                    android:src="@drawable/regards_choose"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/regards_tv_coin_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="23dp"
+            android:text="您共有金币2310"
+            android:textColor="#848484"
+            android:textSize="@dimen/regards_text_size"/>
+
+        <TextView
+            android:id="@+id/regards_tv_send"
+            android:layout_width="68dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/regards_send_btn_bkg"
+            android:gravity="center"
+            android:text="送出"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/regards_text_size"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
