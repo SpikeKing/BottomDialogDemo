@@ -1,4 +1,4 @@
-# 使用 DialogFragment 实现底部弹窗布局
+# DialogFragment实现底部弹窗
 
 > 欢迎Follow我的GitHub: https://github.com/SpikeKing
 
