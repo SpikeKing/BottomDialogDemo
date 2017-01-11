@@ -1,4 +1,4 @@
-# 使用 DialogFragment 实现底部弹窗布局
+# DialogFragment实现底部弹窗
 
 > 欢迎Follow我的GitHub: https://github.com/SpikeKing
 
@@ -50,7 +50,7 @@ Dialog的样式. 宽度最大, 高度匹配, 是否浮现于Activity之上, 关�
 
 ---
 
-# 控制逻辑
+## 控制逻辑
 
 初始化控件组, 把图片\文字\框架组成三个控件组; 初始化框架点击事件, 点击不同的框架, 替换文字颜色与选中图片. 点击发送按钮``mTvSend``, 根据当前选中状态, 动态更新金币.
 
